@@ -44,13 +44,8 @@ const Calendario = () => {
             end,
         };
         });
-        //console.log("auiaa",eventosLista);
-        
+    
         setEventos(eventosLista);
-          //  console.log("quantidade agendamentos", eventosLista.length);
-        // console.log("test eventos: ", eventos);
-        //console.log("eventoslista: ", eventosLista.length);
-        
     }catch(erro){
     
         console.error("Erro ao listar eventos:",erro);
@@ -60,9 +55,6 @@ const Calendario = () => {
 
   useEffect(() => {
     listarEventos();
-   // console.log("start: ", start , "end: ", end);
-  // console.log("test eventos: ",eventosT); 
-    //console.log("eventos use effect: ", eventos.length)
   }, []);
 
 

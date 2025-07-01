@@ -1,17 +1,6 @@
 import React, { useState } from "react";
 import "./Garantia.css";
-import { jsPDF } from "jspdf";
-import img from "../assets/logobranco.jpg";
 import Input from "../componentes/input/Input";
-import { db } from "../Data/Data";
-import {
-  collection,
-  addDoc,
-  query,
-  orderBy,
-  limit,
-  getDocs,
-} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import Header from "../componentes/Header/Header";
 import { postToDatabaseGarantia } from "../services/FireBaseDataService";
 const Garantia = () => {
