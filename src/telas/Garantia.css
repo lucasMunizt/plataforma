@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bold', sans-serif;
+} 
+
+.pai-garantia{
+    background-color: #24221F;
+    height: 100%;
+
+}
+
+
+::placeholder{
+    color: white;
+}
+
+
+label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #D4CCB6;
+    margin-bottom: 5px;
+    margin: 1px;
+}
+
+.campos-garantia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.recibo{
+    text-align: center;
+    margin-top: 100px;
+    color: #D4CCB6;
+}
+
+.formulario{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+
+}
+
+.valor textarea{
+    margin-top: 5px;
+    border:1px rgb(211, 211, 211) solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    padding-inline-start: 30px;
+    outline-color: #04D361;
+    color: black;
+    display: flex;
+
+}
+
+.data-garantia{
+    display: flex;
+    flex-direction: column;
+}
+
+#enviar{
+    margin-top: 40px;
+    width: 400px;
+    padding: 10px;
+    background-color: #04D361;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+
+@media (max-width: 760px) {
+    .formulario{
+        margin-top: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

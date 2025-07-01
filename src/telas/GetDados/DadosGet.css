@@ -1,0 +1,85 @@
+#nome-dados{
+    text-align: center;
+    font-weight: 900;
+    color: #C9CCB6;
+    margin-top: 20px;
+}
+
+.container-dados-pai{
+    background-color: #24221F;
+}
+
+.container-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#campo-busca-dados{
+    width: 350px;
+    height: 40px;
+    border: none;
+}
+
+#campo-busca-dados::placeholder{
+    color: rgb(75, 75, 75);
+    font-size: 12px;
+}
+
+.botao-busca{
+    border: none;
+    position: relative;
+    right: 30px;
+}
+
+#icone-busca{
+    border: none;
+    background-color: white;
+}
+
+.opcoes-dados{
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+}
+
+.botoes-dados{
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgb(61, 221, 168);
+    border: none;
+    border-radius: 12px;
+    transition: .5s;
+}
+
+.botoes-dados:hover{
+    background-color: rgb(114, 216, 182);
+}
+
+.valores{
+    margin-top: 2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+
+@media (max-width: 760px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .busca-dados input{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}

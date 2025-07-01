@@ -1,0 +1,246 @@
+.tela{
+    background-color: #24221F;
+}
+
+.calendario{
+    height: 100vh;
+    width: 100%
+}
+
+.container-calendario{
+    display: flex;
+}
+
+
+.toolbar{
+    height: 100vh;
+    width: 20%;
+    display: none;
+
+} 
+
+.toolbar-container{
+    display: flex;
+    height: 10vh;
+    padding-left: 50px;
+
+}
+
+
+.mesAno{
+    width: 50%;
+    color: #f3f3f3;
+    justify-content: flex-start;
+    display: none;
+}
+
+.dirtop{
+    width: 150%;
+    justify-content: end;
+    display: flex;
+    padding-right: 50px;
+}
+
+.dropdown{
+    margin-top: 18px;
+}
+
+.dropdown ul {
+    background-color: rgb(248, 242, 242);
+}
+
+
+
+.dropdown li{
+    background-color:rgb(248, 242, 242);
+}
+
+.modal-container {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.081);
+    z-index: 100001;
+}
+
+
+#butao-fechar-calendario{
+    position: absolute;
+    left: 68%;
+    transform: translateX(-50%);
+     top: 18%;
+    z-index: 111000;
+}
+
+ .rbc-toolbar{
+    height: 10vh;
+    color: #bbb;
+    font-size: 25px;
+  
+}
+
+.rbc-btn-group > button{
+    border: 0;
+}
+
+/* botões de mudar o formato do calendario e para adiantar e voltar */
+.rbc-toolbar button{
+    /* color: #cecece; */
+    font-size: 15px;
+    border: 1px solid #8382824f;
+}
+
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active{
+    background-color: #0f0f0f86;
+    border-color: #bbb;
+}
+
+.rbc-month-view{
+    border-color: #eeeeee5f;
+  
+}
+.rbc-month-row+ .rbc-month-row {
+    border-color: #dddddd73;
+}
+.rbc-day-bg + .rbc-day-bg {
+    border-color: #dddddd73;
+}
+/*Mes*/
+.rbc-header{
+    color: #eeeeeeee;
+    /* color: black; */
+    border-color: #dddddd73;
+}
+
+.rbc-header + .rbc-header{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #dddddd73;
+}
+
+
+/* primeiros quadro quadrados do calendario */
+.rbc-off-range-bg{
+    background-color: #24221F !important; 
+}
+
+/* quadrado do dia atual */
+/* .rbc-today{
+   
+} */
+
+/* Cor dos numeros */
+.rbc-button-link{
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.rbc-off-range .rbc-button-link{
+    color: white;
+}
+
+.rbc-button-link {
+color: white !important;
+}
+
+.rbc-show-more{
+    color:red !important;
+}
+
+.rbc-now .rbc-button-link{
+    background-color: #f15550;
+    color: #ffffff;
+    border-radius: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 5px;
+    font-size: 16px;
+    width: 30px;
+}
+.rbc-time-content,.rbc-time-content > .rbc-day-slot,.rbc-timeslot-group, .rbc-time-slot{
+    color: #bbb;
+    border-color: #b0b0b036;
+}
+
+.rbc-day-slot .rbc-time-slot{
+    border-top: 1px solid #c8c8c80a;
+}
+
+/*Agenda*/
+.rbc-agenda-content, .rbc-agenda-view{
+    color: #aaa;
+}
+
+.rbc-agenda-date-cell, .rbc-agenda-time-cell{
+    background-color: #262626;
+    /* background-color: rgba(250, 242, 242, 0.904); */
+}
+
+.rbc-agenda-event-cell{
+    border-radius: 20px;
+    font-weight: bold;
+    color: #e0e0e0;
+} 
+
+.toolbar-navegation{
+    display: flex;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+@media(max-width:1200px){
+    #butao-fechar-calendario{
+        left: 70%;
+        top: 15%;
+    }
+  }
+
+  @media(max-width:960px){
+    .tes-botao-modal-calendario{
+        margin-top: -4%;
+        margin-left: 72.25rem; /*-260px*/
+    }
+
+  }
+
+  @media(max-width:860px){
+    .tes-botao-modal-calendario{
+        margin-top: -8%;
+        margin-left: 26.25rem; /*-260px*/
+    }
+  }
+
+  @media(max-width:690px){
+    .tes-botao-modal-calendario{
+        margin-top: -10%;
+        margin-left: 29.25rem; /*-260px*/
+    }
+  }
+
+
+  @media(max-width:580px){
+    .tes-botao-modal-calendario{
+        margin-top: 8.1%;
+        margin-left: 33.25rem; /*-260px*/
+    }
+    .toolbar{
+        display: none;
+    }
+
+    .calendario{
+        width: 100%;
+        align-items: center;
+    }
+
+    #butao-fechar-calendario{
+        left: 150%;
+        top: 15%;
+    }
+      
+  }

@@ -1,0 +1,63 @@
+.modal-plataforma{
+    position: fixed; /* Para garantir que a modal seja fixa na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para alinhar o centro */
+    background-color: white; /* Cor de fundo para visualização */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    z-index: 10001; /* Certifique-se de que está acima de outros elementos */
+    width: 350px; /* Largura fixa ou ajustável */
+    height: auto; /* Altura automática */
+}
+
+#fechar-modal{
+    position: relative;
+    left: 90%;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.elementos{
+    margin-top: 20px;
+}
+
+#nome-modal,#aparelho-modal,#endereco-modal{
+    margin-bottom: 20px;
+}
+
+.botoes-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#deletar-modal{
+    width: 100px;
+    background-color: red;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+#editar-modal{
+    width: 100px;
+    background-color: green;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+#deletar-modal:hover{
+    background-color: rgb(131, 128, 128);
+}
+
+#editar-modal:hover{
+    background-color: rgb(131, 128, 128);
+}
+

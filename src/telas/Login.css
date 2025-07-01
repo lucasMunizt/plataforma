@@ -1,0 +1,63 @@
+.tela-completa-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24221F;
+    height: 100%;
+}
+
+
+.login-box{
+    height: 400px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 12px;
+    margin-top: 20%;
+}
+
+#texto-login{
+    color: white;
+}
+
+#login-email{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+#login-email::placeholder{
+    color: black;
+}
+
+#login-senha::placeholder{
+    color: black;
+}
+
+
+#butao-login{
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: #04D361;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 760px) {
+    .login-box{
+        width: 385px;
+        height: 400px;
+        padding: 60px;
+        
+    }
+    #butao-login,#login-senha ,#login-email{
+       width: 250px;
+    }
+
+    
+}
