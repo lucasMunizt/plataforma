@@ -11,29 +11,21 @@ import Header from '../componentes/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-
-import Dados from '../componentes/Header/Dados';
 import Modal from '../componentes/Modal/Modal';
 import { db } from '../Data/Data';
 import {
     collection,
-    addDoc,
-    query,
-    orderBy,
-    limit,
     getDocs,
   } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 const Calendario = () => {
     const localizer = momentLocalizer(moment);
-    const [eventos, setEventos] = useState(Dados);
+    const [eventos, setEventos] = useState([]);
     const DragAndDropCalendar = withDragAndDrop(Calendar);
     const [eventoSelecionados, setEventoSelecionados] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    let start = moment().clone().startOf('month').format('YYYY-MM-DD');
-    let end = moment().clone().endOf('month').format('YYYY-MM-DD');
     const openModal = () => setIsModalOpen(true);
-    const [eventosT,setEventosT] = useState([])
+
     
   const listarEventos = async () => {
     try{

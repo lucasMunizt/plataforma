@@ -2,18 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import './Modal.css'
 import {CircleX} from 'lucide-react'
-import Dados from '../Header/Dados';
 
-import {
-    collection,
-    addDoc,
-    query,
-    orderBy,
-    limit,
-    getDocs,
-    deleteDoc,
-    doc 
-  } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+
 import {DeletarEventoModal} from "../../services/FireBaseDataService.jsx";
 const Modal = ({
   nome,
@@ -23,13 +13,8 @@ const Modal = ({
   idModal
 }) => {
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = (e) =>{setIsModalOpen(false)}
-    const [eventos,setEventos] = useState(Dados)
-
   const deletarEvento = async () =>{
-      DeletarEventoModal(idModal);
+    DeletarEventoModal(idModal);
   }
   
   return (
