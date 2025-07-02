@@ -7,7 +7,7 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'react-big-calendar/lib/addons/dragAndDrop/styles.css';
-import Header from '../componentes/header/Header';
+//import Header from '../componentes/header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
@@ -139,7 +139,7 @@ const Calendario = () => {
   return (
     <div className='tela'>
             <div className="header-barra">
-               <Header/>
+               {/* <Header/> */}
             </div>
             <div className="container-calendario">
             <div className="toolbar">
