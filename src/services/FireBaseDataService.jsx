@@ -1,5 +1,5 @@
 import React from "react";
-import { db } from "../Data/Data";
+import { db } from "../data/Data";
 import {
   collection,
   addDoc,
