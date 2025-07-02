@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Login.css'
-import Input from '../componentes/input/Input'
+import Input from '../componentes/Input'
 import { LoginDatabese } from '../data/login/Login';
 const Login = () => {
     const [email,setEmail] = useState('');

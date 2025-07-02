@@ -1,10 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import './Modal.css'
-import {CircleX} from 'lucide-react'
-
-
-import {DeletarEventoModal} from "../../services/FireBaseDataService.jsx";
+import './Modal.css';
+import {CircleX} from 'lucide-react';
+import {DeletarEventoModal} from "../services/FireBaseDataService.jsx";
 const Modal = ({
   nome,
   endereco,

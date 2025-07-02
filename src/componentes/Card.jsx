@@ -1,6 +1,6 @@
 import React from 'react'
-import { CButton, CCard, CCardBody, CCardImage, CCardText, CCardTitle } from '@coreui/react'
-import { deleteDocumento } from '../../services/FireBaseDataService'
+import { CButton, CCard, CCardBody, CCardImage, CCardText, CCardTitle } from '@coreui/react';
+import { deleteDocumento } from '../services/FireBaseDataService';
 const Card = ({
     nome,
     os,

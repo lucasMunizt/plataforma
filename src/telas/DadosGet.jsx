@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './DadosGet.css';
-//import Header from './componentes/header/Header';
-//import Header from '../componentes/header/Header'
-import Card from '../componentes/card/Card';
+import Header from '../componentes/Header'
+import Card from '../componentes/Card';
 import {Search} from 'lucide-react'
 import { getDadosGarantia, getDadosOrdemServico,getDadosPesquisados } from '../services/GetDadosBanco';
 
@@ -63,7 +62,7 @@ const DadosGet = () => {
 
   return (
     <div className='container-dados-pai'>
-      {/* <Header /> */}
+      <Header />
       <h4 id='nome-dados'>Dados {tipo}</h4>
       <div className="container-dados">
         <div className="busca-dados">

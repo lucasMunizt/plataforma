@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Garantia.css";
-import Input from "../componentes/input/Input";
-//import Header from "../componentes/header/Header";
+import Input from "../componentes/Input";
+import Header from "../componentes/Header";
 import { postToDatabaseGarantia } from "../services/FireBaseDataService";
 const Garantia = () => {
   const [nome, setNome] = useState("");
@@ -28,7 +28,7 @@ const Garantia = () => {
 
   return (
     <div className="pai-garantia">
-      {/* <Header /> */}
+      <Header />
       <div className="campos-garantia">
         <div className="recibo">
           <h2>Garantia</h2>
