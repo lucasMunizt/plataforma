@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Garantia.css";
 import Input from "../componentes/input/Input";
-import Header from "../componentes/Header/Header";
+import Header from "../componentes/header/Header";
 import { postToDatabaseGarantia } from "../services/FireBaseDataService";
 const Garantia = () => {
   const [nome, setNome] = useState("");

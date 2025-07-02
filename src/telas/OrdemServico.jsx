@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './OrdemServico.css';
 import Input from '../componentes/input/Input';
-import Header from '../componentes/Header/Header';
+import Header from '../componentes/header/Header';
 import { postToDatabaseServico } from '../services/FireBaseDataService';
 const OrdemServico = () => {
   const [nome, setNome] = useState('');

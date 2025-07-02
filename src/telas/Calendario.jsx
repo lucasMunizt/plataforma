@@ -7,16 +7,14 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import 'react-big-calendar/lib/addons/dragAndDrop/styles.css';
-import Header from '../componentes/Header/Header';
+import Header from '../componentes/header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import Modal from '../componentes/Modal/Modal';
-import { db } from '../Data/Data';
-import {
-    collection,
-    getDocs,
-  } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+import Modal from '../componentes/modal/Modal';
+import { db } from '../data/Data';
+//import { db } from '../data/Data';
+import { collection,getDocs } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 const Calendario = () => {
     const localizer = momentLocalizer(moment);
@@ -56,9 +54,6 @@ const Calendario = () => {
   useEffect(() => {
     listarEventos();
   }, []);
-
-
-
 
     const messages = {
         date: 'Data',
@@ -141,6 +136,7 @@ const Calendario = () => {
         setEventoSelecionados(null);
         openModal(false)
     };
+
   return (
     <div className='tela'>
             <div className="header-barra">

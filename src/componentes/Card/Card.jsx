@@ -13,7 +13,7 @@ const Card = ({
 }) => {
 
   const deletarElemento =  async() =>{
-      deleteDocumento(tipo,id)
+    deleteDocumento(tipo,id)
   }
 
 

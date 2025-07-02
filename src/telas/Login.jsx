@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Login.css'
 import Input from '../componentes/input/Input'
-import { LoginDatabese } from '../Data/Login/Login';
+import { LoginDatabese } from '../data/login/Login';
 const Login = () => {
     const [email,setEmail] = useState('');
     const [senha,setSenha] = useState('');
@@ -26,4 +26,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login 
