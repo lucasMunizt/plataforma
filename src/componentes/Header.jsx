@@ -124,6 +124,7 @@ const Header = () => {
                     textAlign: "center",
                     padding: "5px",
                   }}
+                  placeholder="data de inicio"
                 />
 
                 <input
@@ -134,6 +135,7 @@ const Header = () => {
                     textAlign: "center",
                     padding: "5px",
                   }}
+                  placeholder="data de termino"
                 />
               </div>
             </div>
