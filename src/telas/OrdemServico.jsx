@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './OrdemServico.css';
 import Input from '../componentes/input/Input.jsx';
-import Header from '../componentes/header/Header.jsx';
+//import Header from '../componentes/header/Header.jsx';
 import { postToDatabaseServico } from '../services/FireBaseDataService';
 const OrdemServico = () => {
   const [nome, setNome] = useState('');
@@ -29,7 +29,7 @@ const OrdemServico = () => {
   
   return (
     <div className='pai'>
-      <Header/>
+      {/* <Header/> */}
       <div className="ordem-servico">
         <div className="nome-f">
           <h3>Ordem de Serviço</h3>
