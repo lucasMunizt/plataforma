@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './DadosGet.css';
-import Header from '../../componentes/Header/Header';
-import Card from '../../componentes/Card/Card';
+import Header from '../../componentes/header/Header';
+import Card from '../../componentes/card/Card';
 import {Search} from 'lucide-react'
-import { getDadosGarantia, getDadosOrdemServico,getDadosPesquisados } from '../../services/GetDados';
+import { getDadosGarantia, getDadosOrdemServico,getDadosPesquisados } from '../../services/GetDadosBanco';
 
 const DadosGet = () => {
   const [dados, setDados] = useState([]);

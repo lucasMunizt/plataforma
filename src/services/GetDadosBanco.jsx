@@ -1,5 +1,5 @@
-import { db } from "../Data/Data"; // ajuste o caminho
-import { collection, getDocs,query,where,orderBy ,startAt, endAt} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+import { db } from "../data/Data"; // ajuste o caminho
+import { collection, getDocs,query,orderBy ,startAt, endAt} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 export async function getDadosGarantia() {
   const dados = [];
