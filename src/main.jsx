@@ -7,7 +7,7 @@ import Login from './telas/Login.jsx';
 import Calendario from './telas/Calendario.jsx';
 import Garantia from './telas/Garantia.jsx';
 import OrdemServico from './telas/OrdemServico.jsx';
-import DadosGet from './telas/getDados/DadosGet.jsx';
+import DadosGet from './telas/DadosGet.jsx';
 import PrivateRoute from './PrivateRoute.jsx'; // importar aqui
 
 const router = createBrowserRouter([
