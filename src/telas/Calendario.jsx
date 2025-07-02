@@ -13,7 +13,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Modal from '../componentes/modal/Modal';
 import { db } from '../data/Data';
-//import { db } from '../data/Data';
 import { collection,getDocs } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 const Calendario = () => {
